@@ -11,3 +11,8 @@ Here, the user is able to
 - Stlyle the card when the reminder is true.
 
 It is responsive, and the state management handled internally with no global state management as it is a small project.
+
+
+To run it, 
+- Run yarn to install all the dependencies
+- yarn dev to start it on the local server

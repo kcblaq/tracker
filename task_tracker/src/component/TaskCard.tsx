@@ -50,12 +50,15 @@ export default function TaskCard({ title, description, status, deadline, reminde
         </span>
         <span className=' flex w-full items-center justify-between'>
           <p className='truncate'>{description} </p>
-          <span className=' flex items-center gap-1 md:gap-2'>
+          <span className=' flex items-center gap-1 md:gap-6'>
             <p>{deadline} </p>
-            <ToggleButton isOn={isOn} onClick={() => {
-              setIsOn(!isOn);
-              handleReminder?.(title);
-            }}  />
+            <span  className=' flex items-center gap-1'>
+              <p> Reminder</p>
+              <ToggleButton isOn={isOn} onClick={() => {
+                setIsOn(!isOn);
+                handleReminder?.(title);
+              }} />
+            </span>
           </span>
         </span>
       </div>
