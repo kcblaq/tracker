@@ -1,10 +1,15 @@
 import { AiOutlineClose } from 'react-icons/ai'
-import { TaskPsops } from './TaskCard';
 import { ChangeEvent } from 'react';
-
-type Prop = {
+type Props = {
+    title: string,
+    status: string,
+    deadline: string,
+    reminder: boolean,
+    description: string,
+}
+export type Prop = {
     close: () => void;
-    task: TaskPsops;
+    task: Props;
     onchange: () => void;
     publish: () => void;
     setTitle: (e: ChangeEvent<HTMLInputElement>) => void;
